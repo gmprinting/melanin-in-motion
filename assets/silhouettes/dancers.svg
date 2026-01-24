@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-label="Dancer silhouettes">
+  <g fill="currentColor">
+    <circle cx="120" cy="55" r="22"/>
+    <path d="M98 92c38-20 70-20 100 0l-18 40c-12 28-18 55-18 90H112c0-33-6-58-18-90z"/>
+    <path d="M70 120c30-22 60-30 88-24l-8 18c-20 2-38 10-56 26z"/>
+    <path d="M170 120c-12-14-30-24-52-28l-6 16c18 6 32 16 42 30z"/>
+    <rect x="105" y="210" width="28" height="16" rx="4"/>
+    <rect x="141" y="210" width="28" height="16" rx="4"/>
+
+    <circle cx="460" cy="55" r="22"/>
+    <path d="M438 92c38-20 70-20 100 0l-18 40c-12 28-18 55-18 90H452c0-33-6-58-18-90z"/>
+    <path d="M408 128c26-20 52-28 78-26l-7 16c-18 4-34 12-48 26z"/>
+    <path d="M530 125c-10-14-26-24-48-30l-6 16c16 6 28 16 36 30z"/>
+    <rect x="445" y="210" width="28" height="16" rx="4"/>
+    <rect x="481" y="210" width="28" height="16" rx="4"/>
+  </g>
+</svg>

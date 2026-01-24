@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Cowboy boots silhouette">
+  <g fill="currentColor">
+    <path d="M70 20h70v84c0 14 10 26 24 30l22 6v36H90c-22 0-40-18-40-40V20z"/>
+    <path d="M190 176h120c18 0 30-14 30-30 0-10-6-20-18-24l-40-12c-16-6-26-20-26-38V20h-70v116c0 22 18 40 40 40z"/>
+    <path d="M70 172c18 0 34-8 46-20h70v28H70v-8z"/>
+    <path d="M190 180v-28h70c12 12 28 20 46 20v8H190z"/>
+  </g>
+</svg>
