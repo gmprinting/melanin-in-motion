@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Melanin in Motion — Line Dance. Culture. Confidence. Classes, events, and merch." />
+  <title>Classes • Melanin in Motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://melanininmotion.net/classes.html" />
+</head>
+<body class="theme-hybrid">
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Melanin in Motion home">
+      <img class="brand-mark" src="assets/images/logo.png" alt="Melanin in Motion logo" />
+      <span class="brand-name">Melanin in Motion</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-toggle-bars"></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="about.html">Our Movement</a>
+      <a href="classes.html">Join a Class</a>
+<a href="merch.html">Shop the Motion</a>
+      <a href="owners.html">Meet the Founders</a>
+      <a href="gallery.html">See the Vibe</a>
+      <a class="nav-cta" href="https://app.squareup.com/appointments/book/qx7sou8si0p28j/L68TRJAV93H33/start">Join a Class</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h1 class="section-title">Sunday Line Dance Class</h1>
+      <p>No experience is necessary—just bring your energy and an open mind. Our Sunday line dance class is designed for beginners and returning dancers alike, creating a fun, supportive environment where learning feels exciting, not intimidating. We break down steps clearly, build confidence through repetition, and celebrate progress every step of the way. Whether your goal is to dance at trail rides, social events, or just for fun, this class is your starting point.</p>
+    </div>
+
+    <div class="card" style="max-width:900px;margin:0 auto;">
+      <div class="meta" style="margin-top:0;">
+        <span class="pill">Sundays</span>
+        <span class="pill">3:45 PM – 5:00 PM</span>
+        <span class="pill">1 Hour • Multiple Dances</span>
+      </div>
+
+      <p class="muted">Starting January 4th (Sunday Afternoons)</p>
+
+      <div class="note" style="margin:16px 0;">
+        <strong>Location:</strong> <span id="class-address">Kinlaw Rosenwald School, Woodbine, GA 31569</span><br>
+        <button class="btn btn-ghost" type="button" onclick="copyAddress()" style="margin-top:10px;">Copy Address</button>
+      </div>
+
+      <a class="btn btn-primary btn-block" href="https://app.squareup.com/appointments/book/qx7sou8si0p28j/L68TRJAV93H33/start" target="_blank" rel="noopener">Book Now</a>
+
+      <p class="muted small" style="margin-top:10px;">Booking opens in a new tab (Square Appointments).</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function copyAddress() {
+    const text = document.getElementById('class-address').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = event.target;
+      const original = btn.textContent;
+      btn.textContent = "Copied!";
+      setTimeout(() => btn.textContent = original, 1200);
+    });
+  }
+</script>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img class="footer-logo" src="assets/images/logo.png" alt="Melanin in Motion logo" />
+      <div class="muted small">© <span id="year"></span> Melanin in Motion. All rights reserved.</div>
+    </div>
+
+    <div class="footer-links">
+  <a href="https://instagram.com/melanininmotionllc" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://www.facebook.com/profile.php?id=61575707708647" target="_blank" rel="noopener">Facebook</a>
+  <a href="https://www.youtube.com/@MelaninInMotionLLC/" target="_blank" rel="noopener">YouTube</a>
+  <a href="https://tiktok.com/@melanininmotion" target="_blank" rel="noopener">TikTok</a>
+</div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('#site-nav');
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('open');
+    document.body.classList.toggle('nav-open');
+  });
+
+  // Close nav on link click (mobile)
+  nav?.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      document.body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
