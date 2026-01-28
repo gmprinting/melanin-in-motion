@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Melanin In Motion — Line Dance. Culture. Confidence. Classes, events, and merch." />
+  <title>About • Melanin In Motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://melanininmotion.net/about.html" />
+</head>
+<body class="theme-hybrid">
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Melanin In Motion home">
+      <img class="brand-mark" src="assets/images/logo.png" alt="Melanin In Motion logo" />
+      <span class="brand-name">Melanin In Motion</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-toggle-bars"></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="about.html">Our Movement</a>
+      <a href="classes.html">Join a Class</a>
+<a href="merch.html">Shop the Motion</a>
+      <a href="owners.html">Meet the Founders</a>
+      <a href="gallery.html">See the Vibe</a>
+      <a class="nav-cta" href="https://app.squareup.com/appointments/book/qx7sou8si0p28j/L68TRJAV93H33/start">Join a Class</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h1 class="section-title">About the Movement</h1>
+      <p class="section-lead">Melanin In Motion is a culture-driven dance brand founded on January 26, 2025, by Temeshia and Justin Harris. What started with our first-ever line dance has grown into a movement celebrating confidence, culture, and community.</p>
+<div class="about-paragraphs">
+  <div class="about-paragraph">
+    <h3>Confidence</h3>
+    <p>Confidence is built here, not required on arrival. Whether you’re stepping onto the floor for the first time or getting your rhythm back, we teach in a way that feels clear, supportive, and fun. Every count you learn, every song you finish, and every “run it back” moment helps you grow into your own style.</p>
+  </div>
+
+  <div class="about-paragraph">
+    <h3>Culture</h3>
+    <p>Rooted in trail ride traditions and Black southern culture, Melanin In Motion celebrates dance as joy, expression, and storytelling. Our movement blends music, rhythm, and community energy into an experience that honors where we come from while keeping the vibe fresh for today’s events.</p>
+  </div>
+
+  <div class="about-paragraph">
+    <h3>Community</h3>
+    <p>This is more than a dance group, it’s a community. We move together, support one another, and celebrate every win. From weekly classes to trail rides and performances, our space is welcoming, uplifting, and built on connection, respect, and shared joy.</p>
+  </div>
+</div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img class="footer-logo" src="assets/images/logo.png" alt="Melanin In Motion logo" />
+      <div class="muted small">© <span id="year"></span> Melanin In Motion. All rights reserved.</div>
+    </div>
+
+    <div class="footer-links">
+  <a href="https://instagram.com/melanininmotionllc" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://www.facebook.com/profile.php?id=61575707708647" target="_blank" rel="noopener">Facebook</a>
+  <a href="https://www.youtube.com/@MelaninInMotionLLC/" target="_blank" rel="noopener">YouTube</a>
+  <a href="https://tiktok.com/@melanininmotion" target="_blank" rel="noopener">TikTok</a>
+</div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('#site-nav');
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('open');
+    document.body.classList.toggle('nav-open');
+  });
+
+  // Close nav on link click (mobile)
+  nav?.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      document.body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
